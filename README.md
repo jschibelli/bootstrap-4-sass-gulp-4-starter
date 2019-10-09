@@ -19,7 +19,7 @@ Install Gulp cli
 2. Change directory:
 `cd bootstrap-4-sass-gulp-4-starter`
     
-3. `cd` into the starter boilerplate folder and run `npm install` in your terminal -  this command installs packages listed in the package.json file and any packages that it depends on. Packages are installed in the node_modules directory. a. Please do not modifiy anything in the `node_modules` directory Note: the node_modules directory is not kept in source control.
+3. `cd` into the starter boilerplate folder and run `npm install` in your terminal -  this command installs packages listed in the package.json file and any packages that it depends on. Packages are installed in the "node_modules" directory. a. Please do not modifiy anything in the "node_modules" directory Note: the "node_modules" directory is not kept in source control.
 
 4.	To start your project, make sure you are in the Pattern Library folder and run ` gulp `  to start the “default” gulp task and bring up the local BrowserSync server. This step will also create the dist folder for you, run the Gulp tasks specified in the gulpfile.js file, and watch for file changes. When changes are ready to be comiited, stop the default gulp task, and commit to source control. 
 
