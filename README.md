@@ -23,12 +23,13 @@ Install Gulp cli
 
 4.	To start your project, make sure you are in the Pattern Library folder and run ` gulp `  to start the “default” gulp task and bring up the local BrowserSync server. This step will also create the dist folder for you, run the Gulp tasks specified in the gulpfile.js file, and watch for file changes. When changes are ready to be comiited, stop the default gulp task, and commit to source control. 
 
-5.	Your finished static mini site will be created in a folder called dist, viewable at this URL:
+5.	Your finished static mini site will be created in a folder called **dist**, viewable at this URL:
 http://localhost:3000 
 
-## Gulp Tasks:
-  - `gulp`      - To compile scss to css, minify css and js and build ready for production files in **dist** folder.
+##  Run Gulp Tasks:
+- `gulp` - Creates a compressed, production-ready assets. This will delete everything in the **dist** folder and recreate all of your complied files. Never make updates directly into the **dist** folder as these files get overridden each time. Note: The **dist** folder is not kept in source control.
 
-  - `gulp dev`  - Starts a local server with browserSync and hot reloading on changes to files (HTML, SCSS, JS).
+- `gulp dev`  - Starts a local server with browserSync and hot reloading on changes to files (HTML, SCSS, JS).
 
-  - `gulp build` - Creates a compressed, production-ready assets. This will delete everything in the dist folder and recreate all of your complied files. Never make updates directly into the dist folder as these files get overridden each time. Note: The dist folder is not kept in source control.
+  
+  
