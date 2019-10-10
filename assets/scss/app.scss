@@ -5,7 +5,7 @@
 @import "bootstrap/bootstrap";
 
 // Import your fonts
-@import url('https://fonts.googleapis.com/css?family=Grenze|Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Grenze|Quicksand|Raleway&display=swap');
 
 // Your style
 @import "variables";
@@ -15,3 +15,6 @@
 @import "layout_cover";
 @import "layout_about_page";
 @import "module";
+
+// Page Styles
+@import "home";

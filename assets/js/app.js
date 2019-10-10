@@ -11,3 +11,8 @@ var app = {
 $("document").ready(function () {
   app.init();
 });
+
+// Home page carousel
+$('.carousel').carousel({
+  interval: 5000
+})
