@@ -18,47 +18,55 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
 
-	  <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
-	    <ul class="navbar-nav">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Link</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#">Disabled</a>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-	        <div class="dropdown-menu" aria-labelledby="dropdown08">
-	          <a class="dropdown-item" href="#">Action</a>
-	          <a class="dropdown-item" href="#">Another action</a>
-	          <a class="dropdown-item" href="#">Something else here</a>
-	        </div>
-	      </li>
-	    </ul>
-	  </div>
+	<!--
+	####################################################
+	N A V B A R
+	####################################################
+	-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown08">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</nav>
-	  <!--
+	<!--
 	####################################################
 	C A R O U S E L
 	####################################################
 	-->
 	<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+
 	    <ol class="carousel-indicators">
 	        <li data-target="#carousel" data-slide-to="0" class="active"></li>
 	        <li data-target="#carousel" data-slide-to="1"></li>
 	        <li data-target="#carousel" data-slide-to="2"></li>
 	    </ol>
+
 	    <div class="carousel-inner" role="listbox">
 	        <div class="carousel-item active">
-	            <a href="https://bootstrapcreative.com/">
+	            <a href="https://schibelli.com/">
 	                <!-- 
 	                If you need more browser support use https://scottjehl.github.io/picturefill/
 	                If a picture looks blurry on a retina device you can add a high resolution like this
@@ -66,12 +74,19 @@
 
 	                What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
 	                 -->
-	                 <picture>
-	                  <source srcset="http://localhost/sites/schibelli.net/wp-content/uploads/2019/10/cropped-website-background-2000x500.jpg" media="(min-width: 1400px)">
-	                  <source srcset="http://localhost/sites/schibelli.net/wp-content/uploads/2019/09/71691.jpg" media="(min-width: 769px)">
-	                   <source srcset="http://localhost/sites/schibelli.net/wp-content/uploads/2019/09/71691.jpg" media="(min-width: 577px)">
-	                  <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-	                </picture>
+					<picture>
+						<!-- Image Size: 2000x500 -->
+						<source srcset="http://localhost/sites/schibelli.net/wp-content/uploads/2019/10/cropped-website-background-2000x500.jpg" media="(min-width: 1400px)">
+						
+						<!-- Image Size: 1400x500 -->
+						<source srcset="http://localhost/sites/schibelli.net/wp-content/uploads/2019/09/71691.jpg" media="(min-width: 769px)">
+
+						<!-- Image Size: 800x500 -->
+						<source srcset="http://localhost/sites/schibelli.net/wp-content/uploads/2019/09/71691.jpg" media="(min-width: 577px)">
+
+						<!-- Image Size: 600x500 -->
+						<img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+					</picture>
 
 	                <div class="carousel-caption">
 	                    <div>
@@ -132,57 +147,85 @@
 	        <span class="sr-only">Next</span>
 	    </a>
 	</div>
-	<!-- /.carousel -->
 
-	<main role="main" class=" body-text body-content ">
-
-		<div class="container">
-		  <div class="row">
-		    <div class="col-sm">
-		      <div class="card" style="width: 18rem;">
-  <img src="http://localhost/sites/schibelli.net/wp-content/uploads/2019/09/71691.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Amet tellus cras adipiscing enim eu turpis egestas</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
-  </div>
-</div>
-		    </div>
-		    <div class="col-sm">
-		      <div class="card" style="width: 18rem;">
-  <img src="http://localhost/sites/schibelli.net/wp-content/uploads/2019/09/about.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Amet tellus cras adipiscing enim eu turpis egestas</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
-  </div>
-</div>
-		    </div>
-		    <div class="col-sm">
-		      <div class="card" style="width: 18rem;">
-  <img src="http://localhost/sites/schibelli.net/wp-content/uploads/2019/10/card.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Amet tellus cras adipiscing enim eu turpis egestas</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a href="#" class="btn btn-outline-secondary">Go somewhere</a>
-  </div>
-</div>
-		    </div>
-		  </div>
-		</div>
+	<!--
+	####################################################
+	C O N T E N T    A R E A
+	####################################################
+	-->
 	
+	<!-- Featured Area -->
+	<main role="main" class=" body-text body-content ">
+		<div class="container">
+			<div class="row">
 
+				<div class="col-sm-4">
+					<div class="card" style="width: 18rem;">
+						<img src="http://localhost/sites/schibelli.net/wp-content/uploads/2019/09/71691.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
 
+							<h5 class="card-title">Amet tellus cras adipiscing enim eu turpis egestas</h5>
+
+							<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+
+							<a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+
+						</div>
+					</div>
+		    	</div>
+
+    			<div class="col-sm-4">
+    				<div class="card" style="width: 18rem;">
+    					<img src="http://localhost/sites/schibelli.net/wp-content/uploads/2019/09/71691.jpg" class="card-img-top" alt="...">
+    					<div class="card-body">
+
+    						<h5 class="card-title">Amet tellus cras adipiscing enim eu turpis egestas</h5>
+
+    						<p class="card-text">
+    						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    						</p>
+
+    						<a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+
+    					</div>
+    				</div>
+    	    	</div>
+
+    			<div class="col-sm-4">
+    				<div class="card" style="width: 18rem;">
+    					<img src="http://localhost/sites/schibelli.net/wp-content/uploads/2019/09/71691.jpg" class="card-img-top" alt="...">
+    					<div class="card-body">
+
+    						<h5 class="card-title">Amet tellus cras adipiscing enim eu turpis egestas</h5>
+
+    						<p class="card-text">
+    						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    						</p>
+
+    						<a href="#" class="btn btn-outline-secondary">Go somewhere</a>
+
+    					</div>
+    				</div>
+    	    	</div>
+			</div>
+	  	</div>
 	</main>
 
 	<!-- Jumbotron -->
 	<div class="jumbotron jumbotron-fluid text-center">
-	  <div class="container">
-	    <h1 class="display-4">Fluid jumbotron</h1>
-	    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-	  </div>
-	</div>
+		<div class="container">
 
+			<h1 class="display-4">Fluid jumbotron</h1>
+
+			<p class="lead">
+				This is a modified jumbotron that occupies the entire horizontal space of its parent.
+			</p>
+		</div>
+	</div>
+	
+	<!-- Main Content Area -->
 	<main role="main" class="container body-text">
 		<div class="row">
 			<div class="col-sm-6">
@@ -279,11 +322,16 @@
 			</div>
 		</div>
 	</main>
-	<!-- /.container -->
+
+	<!--
+	####################################################
+	F O O T E R
+	####################################################
+	-->
 	<footer class="footer mt-auto py-3 text-center bg-dark">
-	  <div class="container">
-	    <span class="text-muted">Place sticky footer content here.</span>
-	  </div>
+		<div class="container">
+			<span class="text-muted">Boilerplate developed by: John Schibelli | &copy; 2019 The Scorpion Den</span>
+		</div>
 	</footer>
 
 <!-- Bootstrap core JavaScript
