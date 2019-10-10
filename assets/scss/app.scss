@@ -4,6 +4,9 @@
 // Bootstrap and its default variables
 @import "bootstrap/bootstrap";
 
+// Import your fonts
+@import url('https://fonts.googleapis.com/css?family=Grenze|Quicksand&display=swap');
+
 // Your style
 @import "variables";
 @import "mixins";
