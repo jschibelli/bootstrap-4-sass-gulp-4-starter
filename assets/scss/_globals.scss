@@ -1,27 +1,8 @@
+
+
+
 /*
  * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-
-
-/*
- * Base structure
  */
 
 html,
@@ -34,7 +15,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: #fff;
+  font-family: 'Raleway', sans-serif;
+  padding: 3rem 0rem;
 
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif;
+}
+.navbar {
+  margin-bottom: 20px;
 }
 .body-text {
   color: black;
@@ -46,9 +35,7 @@ body {
 .cover-container {
   max-width: 42em;
 }
-h1.cover-heading {
-  font-family: 'Cinzel', serif;
-}
+
 
 
 /*
@@ -97,13 +84,13 @@ h1.cover-heading {
 /*
  * Cover
  */
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
-}
+// .cover {
+//   padding: 0 1.5rem;
+// }
+// .cover .btn-lg {
+//   padding: .75rem 1.25rem;
+//   font-weight: 700;
+// }
 
 
 /*
